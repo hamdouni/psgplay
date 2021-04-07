@@ -11,7 +11,12 @@ and files in the [SNDH archive](http://sndh.atari.org/).
 
 For Linux and Mac OS, do `make` to compile `psgplay`. To use
 [Advanced Linux Sound Architecture](https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture)
-(ALSA) and _interactive text mode_, do `make ALSA=1`.
+(ALSA) and _interactive text mode_, do :
+
+```sh
+apt install libasound2-dev # or the equivalent to install missing libs
+make ALSA=1
+```
 
 For Atari ST, do `make CROSS_COMPILE=m68k-elf- PSGPLAY.TOS`.
 
